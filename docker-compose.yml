@@ -1,0 +1,8 @@
+version: '3'
+services:
+  notification-service:
+    build: .
+    ports:
+      - "8087:8087"
+    environment:
+      - GIN_MODE=release
